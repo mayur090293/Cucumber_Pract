@@ -2,12 +2,12 @@ Feature: Create new company
 
 Scenario: Create new company with valid details.
  
- Given User is on login page
- When User enters username and password
- | mayurvmahagaoknar@gmail.com | Mayurm@123 |
+ Given User is on CRM login page
+ When User enters CRM username and password
+ | mayurvmahagaonkar@gmail.com | Mayurm@123 |
  
- Then Login button is clicked
- Then User should be navigated to the home page
+ Then User clicks on login button
+ Then User should land on home page
  Then User clicks on Companies menu in left panel
  Then User clicks New button
  Then User enters "Zap"

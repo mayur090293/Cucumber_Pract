@@ -18,14 +18,14 @@ public class login_steps
 	@Given("^User is on login page$")
 	public void User_is_on_login_page()
 	{
-		System.setProperty("webdriver.chrome.driver","E:/My Workspace/Cucumber_pract_java/Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","D:/My Workspace/Cucumber_Pract/Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://ui.freecrm.com/");
 	}
 	
 	@When("^User enters \"(.*)\" and \"(.*)\"$")
-	public void User_enters_username_and_password(String username, String password)
+	public void User_enter_username_and_password(String username, String password)
 	{
 		driver.findElement(By.name("email")).sendKeys(username);
 		driver.findElement(By.name("password")).sendKeys(password);
